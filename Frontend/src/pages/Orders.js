@@ -91,7 +91,7 @@ const Orders = () => {
                                 <div className="row py-3">
                                   <div className="col-3">
                                     <p className="text-white">
-                                      {i?.product?.title}
+                                      {i?.product?.title || "Product Deleted"}
                                     </p>
                                   </div>
                                   <div className="col-3">
@@ -104,7 +104,7 @@ const Orders = () => {
                                     <ul className="colors ps-0">
                                       <li
                                         style={{
-                                          backgroundColor: i?.color.title,
+                                          backgroundColor: i?.color?.title || "gray",
                                         }}
                                       ></li>
                                     </ul>
